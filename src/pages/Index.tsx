@@ -27,7 +27,7 @@ const ADDONS = [
   { id: 'direct', title: 'Ведение рекламы Яндекс.Директ', price: 10000, icon: 'Megaphone' },
   { id: 'ai', title: 'Продвижение сайта в ИИ-поисковиках', price: 10000, icon: 'Sparkles' },
   { id: 'social', title: 'Социальные сигналы', price: 10000, icon: 'ThumbsUp' },
-  { id: 'design', title: 'Доработки дизайнером', price: 10000, icon: 'Palette' },
+  { id: 'design', title: 'Доработки сайта дизайнером', price: 10000, icon: 'Palette' },
   { id: 'call', title: 'Коллтрекинг', price: 10000, icon: 'PhoneCall' },
   { id: 'smm', title: 'Ведение группы ВК и соцсетей', price: 10000, icon: 'Users' },
   { id: 'texts', title: '+10 SEO-текстов для сайта', price: 10000, icon: 'FileText' },
