@@ -36,6 +36,16 @@ const ADDONS = [
 
 const BASE_PRICE = 20000;
 
+const BASE_INCLUDES = [
+  'SEO-аудит — по 200 показателям',
+  'ТЗ программисту на 5–7 пунктов',
+  '3 текста для сайта размером до 2000 символов',
+  'Покупка 3 ссылок на Кворк',
+  'Покупка 300 лайков / репостов в группу ВК или аналог',
+  '2 часа SEO-консультаций',
+  '30 посетителей сайта ежедневно',
+];
+
 const SERVICES = [
   { icon: 'Search', title: 'SEO-аудит', text: 'Полный технический и контентный анализ сайта с планом роста.' },
   { icon: 'TrendingUp', title: 'Продвижение в ТОП', text: 'Комплексная работа над позициями в Яндекс и Google.' },
@@ -167,17 +177,32 @@ const Index = () => {
 
           <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
             <div>
-              <div className="mb-4 flex items-center justify-between rounded-lg border border-primary/50 bg-primary/10 p-5">
-                <div className="flex items-center gap-4">
-                  <div className="gold-gradient flex h-11 w-11 items-center justify-center rounded-md">
-                    <Icon name="Package" size={22} className="text-[hsl(218_40%_10%)]" />
+              <div className="mb-4 rounded-lg border border-primary/50 bg-primary/10 p-5">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="gold-gradient flex h-11 w-11 items-center justify-center rounded-md">
+                      <Icon name="Package" size={22} className="text-[hsl(218_40%_10%)]" />
+                    </div>
+                    <div>
+                      <div className="font-display text-lg font-semibold">Базовое продвижение</div>
+                      <div className="text-sm text-muted-foreground">Обязательный пакет — основа продвижения</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-display text-lg font-semibold">Базовое продвижение</div>
-                    <div className="text-sm text-muted-foreground">Обязательный пакет — основа продвижения</div>
-                  </div>
+                  <div className="font-display text-xl font-bold text-gold">{fmt(BASE_PRICE)}</div>
                 </div>
-                <div className="font-display text-xl font-bold text-gold">{fmt(BASE_PRICE)}</div>
+                <div className="mt-5 border-t border-primary/20 pt-5">
+                  <div className="mb-3 text-sm font-semibold uppercase tracking-wide text-gold">
+                    Комплекс работ по продвижению сайта в ТОП
+                  </div>
+                  <ul className="grid gap-2.5 sm:grid-cols-2">
+                    {BASE_INCLUDES.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2.5 text-sm">
+                        <Icon name="Check" size={16} className="mt-0.5 shrink-0 text-gold" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
