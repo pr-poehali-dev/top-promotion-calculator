@@ -26,7 +26,7 @@ const ADDONS = [
   { id: 'nakrutka', title: 'Поддержка ВЧ запросов рекламой', price: 10000, icon: 'MousePointerClick' },
   { id: 'direct', title: 'Ведение рекламы Яндекс.Директ', price: 10000, icon: 'Megaphone' },
   { id: 'ai', title: 'Продвижение сайта в ИИ-поисковиках', price: 10000, icon: 'Sparkles' },
-  { id: 'social', title: 'Социальные сигналы', price: 10000, icon: 'ThumbsUp' },
+  { id: 'social', title: 'Полный редизайн сайта', price: 50000, icon: 'Layers' },
   { id: 'design', title: 'Доработки сайта дизайнером', price: 10000, icon: 'Palette' },
   { id: 'call', title: 'Коллтрекинг', price: 10000, icon: 'PhoneCall' },
   { id: 'smm', title: 'Ведение группы ВК и соцсетей', price: 10000, icon: 'Users' },
