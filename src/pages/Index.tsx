@@ -32,6 +32,7 @@ const ADDONS = [
   { id: 'smm', title: 'Ведение группы ВК и соцсетей', price: 10000, icon: 'Users' },
   { id: 'texts', title: 'Дополнительно 5 текстов для сайта', price: 10000, icon: 'FileText' },
   { id: 'top1', title: 'ТОП-3 Яндекса за пару дней', price: 30000, icon: 'Trophy' },
+  { id: 'multiregion', title: 'Мультирегиональное продвижение, поддомены', price: 10000, icon: 'Globe' },
 ];
 
 const BASE_PRICE = 20000;
