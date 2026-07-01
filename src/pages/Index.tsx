@@ -31,7 +31,7 @@ const ADDONS = [
   { id: 'call', title: 'Коллтрекинг', price: 10000, icon: 'PhoneCall' },
   { id: 'smm', title: 'Ведение группы ВК и соцсетей', price: 10000, icon: 'Users' },
   { id: 'texts', title: 'Дополнительно 5 текстов для сайта', price: 10000, icon: 'FileText' },
-  { id: 'top1', title: 'Быстрый вывод в ТОП-1', price: 30000, icon: 'Trophy' },
+  { id: 'top1', title: 'Вывод в ТОП-3 Яндекса за пару дней', price: 30000, icon: 'Trophy' },
 ];
 
 const BASE_PRICE = 20000;
