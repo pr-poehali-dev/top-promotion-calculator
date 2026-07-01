@@ -24,7 +24,6 @@ const NAV = [
 ];
 
 const ADDONS = [
-  { id: 'nakrutka', title: 'Поддержка ВЧ запросов рекламой', price: 10000, icon: 'MousePointerClick' },
   { id: 'direct', title: 'Ведение рекламы Яндекс.Директ', price: 10000, icon: 'Megaphone' },
   { id: 'ai', title: 'Продвижение сайта в ИИ-поисковиках', price: 10000, icon: 'Sparkles' },
   { id: 'social', title: 'Полный редизайн сайта', price: 50000, icon: 'Layers' },
