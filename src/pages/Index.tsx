@@ -25,7 +25,7 @@ const NAV = [
 
 const ADDONS = [
   { id: 'direct', title: 'Ведение рекламы Яндекс.Директ', price: 10000, icon: 'Megaphone' },
-  { id: 'ai', title: 'Продвижение сайта в ИИ-поисковиках', price: 10000, icon: 'Sparkles' },
+  { id: 'ai', title: 'Продвижение сайта в нейросетях', price: 10000, icon: 'Sparkles' },
   { id: 'social', title: 'Полный редизайн сайта', price: 50000, icon: 'Layers' },
   { id: 'design', title: 'Доработки сайта дизайнером', price: 10000, icon: 'Palette' },
   { id: 'call', title: 'Построение воронки продаж', price: 30000, icon: 'Filter' },
