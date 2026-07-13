@@ -32,6 +32,7 @@ const ADDONS = [
   { id: 'texts', title: 'Дополнительно 8 текстов для сайта', price: 10000, icon: 'FileText' },
   { id: 'top1', title: 'ТОП-3 Яндекса за пару дней', price: 30000, icon: 'Trophy' },
   { id: 'multiregion', title: 'Мультирегиональное продвижение', price: 10000, icon: 'Globe' },
+  { id: 'maps', title: 'Продвижение в Яндекс.Картах', price: 10000, icon: 'MapPin' },
 ];
 
 const BASE_PRICE = 20000;
