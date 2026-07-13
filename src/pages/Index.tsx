@@ -200,7 +200,7 @@ const Index = () => {
               Комплекс услуг по <span className="text-gradient-shine">продвижению</span> вашего сайта в ТОП
             </h1>
             <p className="animate-fade-in stagger-2 mt-6 max-w-xl text-lg text-muted-foreground">
-              Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат, индивидуальные пакеты услуг с настраиваемыми опциями. <span className="font-bold text-foreground">14 дней</span> бесплатного тест-драйва.
+              Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат, индивидуальные пакеты услуг с доп. опциями. <span className="font-bold text-foreground">14 дней</span> бесплатного тест-драйва.
             </p>
             <div className="animate-fade-in stagger-3 mt-9 flex flex-wrap gap-4">
               <Button asChild size="lg" className="gold-gradient animate-pulse-glow font-semibold text-white hover:opacity-90">
