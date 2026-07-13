@@ -9,6 +9,11 @@ import {
 } from '@/components/ui/accordion';
 import teamPhoto1 from '@/assets/team-1.jpg';
 import teamPhoto2 from '@/assets/team-2.jpg';
+import teamPhoto3 from '@/assets/team-3.jpg';
+import teamPhoto4 from '@/assets/team-4.jpg';
+import teamPhoto5 from '@/assets/team-5.jpg';
+
+const TEAM_PHOTOS = [teamPhoto1, teamPhoto2, teamPhoto3, teamPhoto4, teamPhoto5];
 
 const HERO_BG =
   'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/76707d66-ee73-4b33-8136-d133b4b59d26.jpg';
@@ -171,8 +176,9 @@ const Index = () => {
           </nav>
           <div className="flex items-center gap-4">
             <div className="hidden items-center -space-x-3 sm:flex">
-              <img src={teamPhoto1} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
-              <img src={teamPhoto2} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
+              {TEAM_PHOTOS.map((photo, i) => (
+                <img key={i} src={photo} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
+              ))}
             </div>
             <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
               <a href="#calc">Рассчитать</a>
@@ -220,8 +226,9 @@ const Index = () => {
             </div>
             <div className="animate-fade-in stagger-5 mt-10 flex items-center gap-3">
               <div className="animate-float flex -space-x-3">
-                <img src={teamPhoto1} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
-                <img src={teamPhoto2} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
+                {TEAM_PHOTOS.map((photo, i) => (
+                  <img key={i} src={photo} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
+                ))}
               </div>
               <span className="text-sm text-muted-foreground">Ваша команда экспертов по SEO-продвижению</span>
             </div>
