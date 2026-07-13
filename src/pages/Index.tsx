@@ -203,7 +203,7 @@ const Index = () => {
               </Button>
             </div>
             <div className="mt-14 grid max-w-lg grid-cols-3 gap-6">
-              {[['12+', 'лет опыта'], ['640+', 'проектов'], ['94%', 'в ТОП-10']].map(([v, l]) => (
+              {[['20+', 'лет опыта'], ['640+', 'проектов'], ['94%', 'в ТОП-10']].map(([v, l]) => (
                 <div key={l}>
                   <div className="font-display text-4xl font-bold text-gold">{v}</div>
                   <div className="mt-1 text-sm text-muted-foreground">{l}</div>
@@ -386,7 +386,7 @@ const Index = () => {
             <span className="text-sm font-semibold uppercase tracking-widest text-gold">О нас</span>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">Агентство, которому доверяют</h2>
             <p className="mt-5 text-muted-foreground">
-              С 2014 года мы помогаем бизнесу занимать лидирующие позиции в поиске. Наша команда — сертифицированные
+              С 2006 года мы помогаем бизнесу занимать лидирующие позиции в поиске. Наша команда — сертифицированные
               SEO-специалисты, аналитики и контент-маркетологи. Мы работаем прозрачно, отчитываемся по каждому шагу и
               отвечаем за результат.
             </p>
@@ -404,7 +404,7 @@ const Index = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5">
-            {[['640+', 'проектов'], ['12+', 'лет на рынке'], ['24', 'специалиста'], ['94%', 'выход в ТОП-10']].map(
+            {[['640+', 'проектов'], ['20+', 'лет на рынке'], ['24', 'специалиста'], ['94%', 'выход в ТОП-10']].map(
               ([v, l]) => (
                 <div key={l} className="rounded-lg border border-border bg-card p-8 text-center">
                   <div className="font-display text-4xl font-bold text-gold">{v}</div>
