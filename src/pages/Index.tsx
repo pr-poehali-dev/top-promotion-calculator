@@ -30,7 +30,7 @@ const ADDONS = [
   { id: 'design', title: 'Доработки сайта дизайнером', price: 10000, icon: 'Palette' },
   { id: 'call', title: 'Построение воронки продаж', price: 30000, icon: 'Filter' },
   { id: 'smm', title: 'Ведение группы ВК и соцсетей', price: 10000, icon: 'Users' },
-  { id: 'texts', title: 'Дополнительно 5 текстов для сайта', price: 10000, icon: 'FileText' },
+  { id: 'texts', title: 'Дополнительно 8 текстов для сайта', price: 10000, icon: 'FileText' },
   { id: 'top1', title: 'ТОП-3 Яндекса за пару дней', price: 30000, icon: 'Trophy' },
   { id: 'multiregion', title: 'Мультирегиональное продвижение', price: 10000, icon: 'Globe' },
 ];
