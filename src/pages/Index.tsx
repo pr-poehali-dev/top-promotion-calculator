@@ -16,7 +16,7 @@ const NAV = [
   { label: 'Главная', href: '#hero' },
   { label: 'Услуги', href: '#services' },
   { label: 'Калькулятор', href: '#calc' },
-  { label: 'Портфолио', href: '#portfolio' },
+  { label: 'Кейсы', href: '#portfolio' },
   { label: 'О нас', href: '#about' },
   { label: 'Блог', href: '#blog' },
   { label: 'FAQ', href: '#faq' },
@@ -56,9 +56,78 @@ const SERVICES = [
 ];
 
 const PORTFOLIO = [
-  { name: 'Интернет-магазин техники', metric: '+340%', label: 'органический трафик' },
-  { name: 'Юридическая компания', metric: 'ТОП-3', label: '87 ключевых запросов' },
-  { name: 'Производство мебели', metric: '×5', label: 'рост числа заявок' },
+  {
+    name: 'Медицинская клиника в Москве',
+    text: 'Вывели сайт в ТОП по высококонкурентным медицинским запросам и увеличили поток пациентов через органический поиск.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/11e4d79d-1cba-46e9-9efe-8baa062d41e8.jpg',
+    top3: '+156%',
+    traffic: '+280%',
+    leads: '+195%',
+  },
+  {
+    name: 'Завод по производству рессор',
+    text: 'Настроили продвижение под B2B-запросы, привлекли новых оптовых заказчиков из регионов через поисковый трафик.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/a618289c-07b4-46be-8f5a-75ce1f6e9206.jpg',
+    top3: '+210%',
+    traffic: '+320%',
+    leads: '+240%',
+  },
+  {
+    name: 'Оптовая продажа насосного оборудования',
+    text: 'Расширили семантическое ядро под узкоспециализированные запросы и вышли в лидеры выдачи по всей отрасли.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/0fefe4bd-a36a-479a-b7f9-688b9031f6df.jpg',
+    top3: '+180%',
+    traffic: '+265%',
+    leads: '+170%',
+  },
+  {
+    name: 'Оборудование для пищевых производств',
+    text: 'Проработали техническую оптимизацию и контент, обошли основных конкурентов по ключевым коммерческим запросам.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/6aa19bce-7d24-420c-bee5-f6890afa9bba.jpg',
+    top3: '+145%',
+    traffic: '+310%',
+    leads: '+205%',
+  },
+  {
+    name: 'Юридическая компания в Москве',
+    text: 'Вышли в ТОП-3 по 87 ключевым запросам, обеспечили стабильный поток заявок на юридические услуги.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/0349b08f-9368-4c6b-8cc8-1848b9619669.jpg',
+    top3: '+230%',
+    traffic: '+340%',
+    leads: '+260%',
+  },
+  {
+    name: 'Швейная фабрика в Москве',
+    text: 'Продвинули сайт по оптовым и B2B-запросам, увеличили количество заявок от производственных партнёров.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/53f8a50a-70ae-4800-a757-8c926274be99.jpg',
+    top3: '+165%',
+    traffic: '+220%',
+    leads: '+185%',
+  },
+  {
+    name: 'Бюро дизайна интерьера премиум-класса',
+    text: 'Сформировали имиджевую SEO-стратегию, повысили узнаваемость бренда и приток клиентов премиум-сегмента.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/5d3c07da-ef37-4ed6-aaf8-ec02adb5989c.jpg',
+    top3: '+190%',
+    traffic: '+295%',
+    leads: '+215%',
+  },
+  {
+    name: 'Завод резинотехнических изделий',
+    text: 'Провели глубокий технический аудит и нарастили ссылочный профиль, укрепив позиции по отраслевым запросам.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/5d6a7118-5032-438e-8970-345621eae832.jpg',
+    top3: '+175%',
+    traffic: '+250%',
+    leads: '+160%',
+  },
+  {
+    name: 'Производство светопрозрачных конструкций',
+    text: 'Настроили мультирегиональное продвижение, вывели сайт в ТОП по запросам в нескольких регионах России.',
+    image: 'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/78056209-d29c-44e5-b842-9fb2fd784eea.jpg',
+    top3: '+200%',
+    traffic: '+330%',
+    leads: '+225%',
+  },
 ];
 
 const BLOG = [
@@ -279,15 +348,31 @@ const Index = () => {
       <section id="portfolio" className="py-24">
         <div className="container">
           <div className="mb-14 text-center">
-            <span className="text-sm font-semibold uppercase tracking-widest text-gold">Портфолио</span>
+            <span className="text-sm font-semibold uppercase tracking-widest text-gold">Кейсы</span>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">Результаты наших клиентов</h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {PORTFOLIO.map((p) => (
-              <div key={p.name} className="hover-scale rounded-lg border border-border bg-card p-8 text-center">
-                <div className="font-display text-5xl font-bold text-gold">{p.metric}</div>
-                <div className="mt-2 text-sm text-muted-foreground">{p.label}</div>
-                <div className="mt-5 border-t border-border pt-5 font-display text-lg font-semibold">{p.name}</div>
+              <div key={p.name} className="hover-scale overflow-hidden rounded-lg border border-border bg-card">
+                <img src={p.image} alt={p.name} className="h-44 w-full object-cover" />
+                <div className="p-6">
+                  <div className="font-display text-lg font-semibold">{p.name}</div>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+                  <div className="mt-5 grid grid-cols-3 gap-2 border-t border-border pt-5 text-center">
+                    <div>
+                      <div className="font-display text-lg font-bold text-gold">{p.top3}</div>
+                      <div className="mt-1 text-[11px] leading-tight text-muted-foreground">запросов в ТОП-3</div>
+                    </div>
+                    <div>
+                      <div className="font-display text-lg font-bold text-gold">{p.traffic}</div>
+                      <div className="mt-1 text-[11px] leading-tight text-muted-foreground">органич. трафик</div>
+                    </div>
+                    <div>
+                      <div className="font-display text-lg font-bold text-gold">{p.leads}</div>
+                      <div className="mt-1 text-[11px] leading-tight text-muted-foreground">число заявок</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
