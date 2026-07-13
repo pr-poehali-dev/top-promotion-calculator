@@ -194,7 +194,7 @@ const Index = () => {
               Комплекс услуг по <span className="text-gold">продвижению</span> вашего сайта в ТОП
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат и гибкие пакеты под вашу нишу.
+              Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат, индивидуальные пакеты услуг с настраиваемыми опциями.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Button asChild size="lg" className="gold-gradient font-semibold text-[hsl(218_40%_10%)] hover:opacity-90">
