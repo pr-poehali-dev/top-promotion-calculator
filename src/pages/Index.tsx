@@ -12,8 +12,9 @@ import teamPhoto2 from '@/assets/team-2.jpg';
 import teamPhoto3 from '@/assets/team-3.jpg';
 import teamPhoto4 from '@/assets/team-4.jpg';
 import teamPhoto5 from '@/assets/team-5.jpg';
+import teamPhoto6 from '@/assets/team-6.jpg';
 
-const TEAM_PHOTOS = [teamPhoto1, teamPhoto2, teamPhoto3, teamPhoto4, teamPhoto5];
+const TEAM_PHOTOS = [teamPhoto1, teamPhoto2, teamPhoto3, teamPhoto4, teamPhoto5, teamPhoto6];
 
 const HERO_BG =
   'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/76707d66-ee73-4b33-8136-d133b4b59d26.jpg';
