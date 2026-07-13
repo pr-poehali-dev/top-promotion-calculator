@@ -54,6 +54,7 @@ const SERVICES = [
   { icon: 'MousePointerClick', title: 'Улучшение ПФ', text: 'Улучшение поведенческих факторов по запросам для вывода сайта в ТОП-3 Яндекса и Google.' },
   { icon: 'Megaphone', title: 'Настройка рекламы', text: 'Поддержка платным трафиком для увеличения CTR и узнаваемости, а также количества заявок и обращений.' },
   { icon: 'BarChart3', title: 'Аналитика', text: 'Прозрачная отчётность — настройка целей и мониторинг конверсий в разрезе источника трафика, запросов, регионов и др.' },
+  { icon: 'LineChart', title: 'Маркетинг', text: 'Консультации маркетолога по сглаживанию сезонности, росту трафика, оформлению ассортимента, акциям и т.д.' },
 ];
 
 const PORTFOLIO = [
@@ -222,7 +223,7 @@ const Index = () => {
             <span className="text-sm font-semibold uppercase tracking-widest text-gold">Услуги</span>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">Полный цикл продвижения</h2>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s) => (
               <div key={s.title} className="hover-scale rounded-lg border border-border bg-card p-7">
                 <div className="gold-gradient flex h-12 w-12 items-center justify-center rounded-md">
