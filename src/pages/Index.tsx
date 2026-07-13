@@ -156,7 +156,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <a href="#hero" className="flex items-center gap-2">
             <div className="gold-gradient flex h-9 w-9 items-center justify-center rounded-md">
-              <Icon name="Rocket" size={20} className="text-[hsl(218_40%_10%)]" />
+              <Icon name="Rocket" size={20} className="text-white" />
             </div>
             <span className="font-display text-xl font-bold tracking-wide">ТОП<span className="text-gold">РОСТ</span></span>
           </a>
@@ -167,7 +167,7 @@ const Index = () => {
               </a>
             ))}
           </nav>
-          <Button asChild className="gold-gradient font-semibold text-[hsl(218_40%_10%)] hover:opacity-90">
+          <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
             <a href="#calc">Рассчитать</a>
           </Button>
         </div>
@@ -191,7 +191,7 @@ const Index = () => {
               Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат, индивидуальные пакеты услуг с настраиваемыми опциями. <span className="font-bold text-foreground">14 дней</span> бесплатного тест-драйва.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="gold-gradient font-semibold text-[hsl(218_40%_10%)] hover:opacity-90">
+              <Button asChild size="lg" className="gold-gradient font-semibold text-white hover:opacity-90">
                 <a href="#calc"><Icon name="Calculator" size={18} className="mr-2" /> Рассчитать стоимость</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-border hover:bg-secondary">
@@ -221,7 +221,7 @@ const Index = () => {
             {SERVICES.map((s) => (
               <div key={s.title} className="hover-scale rounded-lg border border-border bg-card p-7">
                 <div className="gold-gradient flex h-12 w-12 items-center justify-center rounded-md">
-                  <Icon name={s.icon} size={24} className="text-[hsl(218_40%_10%)]" />
+                  <Icon name={s.icon} size={24} className="text-white" />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
@@ -248,7 +248,7 @@ const Index = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="gold-gradient flex h-11 w-11 items-center justify-center rounded-md">
-                      <Icon name="Package" size={22} className="text-[hsl(218_40%_10%)]" />
+                      <Icon name="Package" size={22} className="text-white" />
                     </div>
                     <div>
                       <div className="font-display text-lg font-semibold">Базовое продвижение</div>
@@ -287,7 +287,7 @@ const Index = () => {
                     >
                       <div
                         className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-md ${
-                          active ? 'gold-gradient text-[hsl(218_40%_10%)]' : 'bg-secondary text-gold'
+                          active ? 'gold-gradient text-white' : 'bg-secondary text-gold'
                         }`}
                       >
                         <Icon name={a.icon} size={20} />
@@ -329,7 +329,7 @@ const Index = () => {
                 <span className="text-muted-foreground">Итого в месяц</span>
                 <span className="font-display text-4xl font-bold text-gold">{fmt(total)}</span>
               </div>
-              <Button className="mt-7 w-full gold-gradient font-semibold text-[hsl(218_40%_10%)] hover:opacity-90" size="lg">
+              <Button className="mt-7 w-full gold-gradient font-semibold text-white hover:opacity-90" size="lg">
                 <Icon name="Send" size={18} className="mr-2" /> Оставить заявку
               </Button>
               <p className="mt-3 text-center text-xs text-muted-foreground">
@@ -463,7 +463,7 @@ const Index = () => {
               <input placeholder="Адрес сайта" className="w-full rounded-md border border-border bg-secondary/50 px-4 py-3 text-sm outline-none focus:border-primary" />
               <textarea placeholder="Комментарий" rows={4} className="w-full resize-none rounded-md border border-border bg-secondary/50 px-4 py-3 text-sm outline-none focus:border-primary" />
             </div>
-            <Button className="mt-5 w-full gold-gradient font-semibold text-[hsl(218_40%_10%)] hover:opacity-90" size="lg">
+            <Button className="mt-5 w-full gold-gradient font-semibold text-white hover:opacity-90" size="lg">
               Отправить заявку
             </Button>
           </form>
@@ -475,7 +475,7 @@ const Index = () => {
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-2">
             <div className="gold-gradient flex h-8 w-8 items-center justify-center rounded-md">
-              <Icon name="Rocket" size={18} className="text-[hsl(218_40%_10%)]" />
+              <Icon name="Rocket" size={18} className="text-white" />
             </div>
             <span className="font-display text-lg font-bold">ТОП<span className="text-gold">РОСТ</span></span>
           </div>
