@@ -182,31 +182,35 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="hero" className="relative flex min-h-screen items-center pt-16">
+      <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pt-16">
         <div className="absolute inset-0">
           <img src={HERO_BG} alt="" className="h-full w-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
         </div>
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="animate-blob absolute -top-20 left-1/4 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
+          <div className="animate-blob-delay absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
+        </div>
         <div className="container relative z-10 py-24">
-          <div className="max-w-3xl animate-fade-in">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm text-gold">
+          <div className="max-w-3xl">
+            <span className="animate-fade-in inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm text-gold">
               <Icon name="ShieldCheck" size={16} /> Профессиональное SEO-агентство
             </span>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl">
-              Комплекс услуг по <span className="text-gold">продвижению</span> вашего сайта в ТОП
+            <h1 className="animate-fade-in stagger-1 mt-6 font-display text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+              Комплекс услуг по <span className="text-gradient-shine">продвижению</span> вашего сайта в ТОП
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+            <p className="animate-fade-in stagger-2 mt-6 max-w-xl text-lg text-muted-foreground">
               Выводим сайты в лидеры поисковой выдачи. Прозрачная аналитика, измеримый результат, индивидуальные пакеты услуг с настраиваемыми опциями. <span className="font-bold text-foreground">14 дней</span> бесплатного тест-драйва.
             </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="gold-gradient font-semibold text-white hover:opacity-90">
+            <div className="animate-fade-in stagger-3 mt-9 flex flex-wrap gap-4">
+              <Button asChild size="lg" className="gold-gradient animate-pulse-glow font-semibold text-white hover:opacity-90">
                 <a href="#calc"><Icon name="Calculator" size={18} className="mr-2" /> Рассчитать стоимость</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-border hover:bg-secondary">
                 <a href="#services">Наши услуги</a>
               </Button>
             </div>
-            <div className="mt-14 grid max-w-lg grid-cols-3 gap-6">
+            <div className="animate-fade-in stagger-4 mt-14 grid max-w-lg grid-cols-3 gap-6">
               {[['20+', 'лет опыта'], ['640+', 'проектов'], ['94%', 'в ТОП-10']].map(([v, l]) => (
                 <div key={l}>
                   <div className="font-display text-4xl font-bold text-gold">{v}</div>
@@ -214,8 +218,8 @@ const Index = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-10 flex items-center gap-3">
-              <div className="flex -space-x-3">
+            <div className="animate-fade-in stagger-5 mt-10 flex items-center gap-3">
+              <div className="animate-float flex -space-x-3">
                 <img src={teamPhoto1} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
                 <img src={teamPhoto2} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
               </div>
