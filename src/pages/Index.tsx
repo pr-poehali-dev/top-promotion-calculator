@@ -7,6 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import teamPhoto1 from '@/assets/team-1.jpg';
+import teamPhoto2 from '@/assets/team-2.jpg';
 
 const HERO_BG =
   'https://cdn.poehali.dev/projects/206d289d-1dc0-4741-8374-6dcf1e17ae08/files/76707d66-ee73-4b33-8136-d133b4b59d26.jpg';
@@ -167,9 +169,15 @@ const Index = () => {
               </a>
             ))}
           </nav>
-          <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
-            <a href="#calc">Рассчитать</a>
-          </Button>
+          <div className="flex items-center gap-4">
+            <div className="hidden items-center -space-x-3 sm:flex">
+              <img src={teamPhoto1} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
+              <img src={teamPhoto2} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
+            </div>
+            <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
+              <a href="#calc">Рассчитать</a>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -205,6 +213,13 @@ const Index = () => {
                   <div className="mt-1 text-sm text-muted-foreground">{l}</div>
                 </div>
               ))}
+            </div>
+            <div className="mt-10 flex items-center gap-3">
+              <div className="flex -space-x-3">
+                <img src={teamPhoto1} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
+                <img src={teamPhoto2} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
+              </div>
+              <span className="text-sm text-muted-foreground">Ваша команда экспертов по SEO-продвижению</span>
             </div>
           </div>
         </div>
