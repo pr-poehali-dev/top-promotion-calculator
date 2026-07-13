@@ -18,7 +18,6 @@ const NAV = [
   { label: 'Калькулятор', href: '#calc' },
   { label: 'Кейсы', href: '#portfolio' },
   { label: 'О нас', href: '#about' },
-  { label: 'Блог', href: '#blog' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Контакты', href: '#contacts' },
 ];
@@ -130,12 +129,6 @@ const PORTFOLIO = [
     traffic: '+330%',
     leads: '+225%',
   },
-];
-
-const BLOG = [
-  { tag: 'SEO', title: 'Как попасть в ТОП-10 за 3 месяца', date: '24 июня 2026' },
-  { tag: 'Аналитика', title: 'Поведенческие факторы в 2026', date: '18 июня 2026' },
-  { tag: 'Кейсы', title: 'Продвижение интернет-магазина', date: '9 июня 2026' },
 ];
 
 const FAQ = [
@@ -414,29 +407,6 @@ const Index = () => {
                 </div>
               )
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* BLOG */}
-      <section id="blog" className="py-24">
-        <div className="container">
-          <div className="mb-14 text-center">
-            <span className="text-sm font-semibold uppercase tracking-widest text-gold">Блог</span>
-            <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">Полезные материалы</h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {BLOG.map((b) => (
-              <article key={b.title} className="hover-scale group cursor-pointer rounded-lg border border-border bg-card p-7">
-                <span className="inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-gold">
-                  {b.tag}
-                </span>
-                <h3 className="mt-4 font-display text-xl font-semibold group-hover:text-gold">{b.title}</h3>
-                <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-                  <Icon name="Calendar" size={16} /> {b.date}
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </section>
