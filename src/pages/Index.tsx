@@ -49,10 +49,11 @@ const BASE_INCLUDES = [
 ];
 
 const SERVICES = [
-  { icon: 'Search', title: 'SEO-аудит', text: 'Полный технический и контентный анализ сайта с планом роста.' },
-  { icon: 'TrendingUp', title: 'Продвижение в ТОП', text: 'Комплексная работа над позициями в Яндекс и Google.' },
-  { icon: 'Link2', title: 'Ссылочный профиль', text: 'Наращивание качественной ссылочной массы без рисков.' },
-  { icon: 'BarChart3', title: 'Аналитика', text: 'Прозрачные отчёты по позициям, трафику и заявкам.' },
+  { icon: 'Link2', title: 'Ссылки', text: 'Более 2000 вечных ссылок: крауд-ссылки, вечные ссылки из статей, регистрация в каталогах и досках объявлений.' },
+  { icon: 'FileText', title: 'SEO тексты', text: 'Подготовка и размещение SEO текстов под 1500 запросов на сайте и других материалов.' },
+  { icon: 'MousePointerClick', title: 'Улучшение ПФ', text: 'Улучшение поведенческих факторов по запросам для вывода сайта в ТОП-3 Яндекса и Google.' },
+  { icon: 'Megaphone', title: 'Настройка рекламы', text: 'Поддержка платным трафиком для увеличения CTR и узнаваемости, а также количества заявок и обращений.' },
+  { icon: 'BarChart3', title: 'Аналитика', text: 'Прозрачная отчётность — настройка целей и мониторинг конверсий в разрезе источника трафика, запросов, регионов и др.' },
 ];
 
 const PORTFOLIO = [
@@ -221,7 +222,7 @@ const Index = () => {
             <span className="text-sm font-semibold uppercase tracking-widest text-gold">Услуги</span>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">Полный цикл продвижения</h2>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {SERVICES.map((s) => (
               <div key={s.title} className="hover-scale rounded-lg border border-border bg-card p-7">
                 <div className="gold-gradient flex h-12 w-12 items-center justify-center rounded-md">
