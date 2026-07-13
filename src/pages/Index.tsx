@@ -174,16 +174,9 @@ const Index = () => {
               </a>
             ))}
           </nav>
-          <div className="flex items-center gap-4">
-            <div className="hidden items-center -space-x-3 sm:flex">
-              {TEAM_PHOTOS.map((photo, i) => (
-                <img key={i} src={photo} alt="Специалист агентства" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
-              ))}
-            </div>
-            <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
-              <a href="#calc">Рассчитать</a>
-            </Button>
-          </div>
+          <Button asChild className="gold-gradient font-semibold text-white hover:opacity-90">
+            <a href="#calc">Рассчитать</a>
+          </Button>
         </div>
       </header>
 
@@ -197,8 +190,8 @@ const Index = () => {
           <div className="animate-blob absolute -top-20 left-1/4 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
           <div className="animate-blob-delay absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
         </div>
-        <div className="container relative z-10 py-24">
-          <div className="max-w-3xl">
+        <div className="container relative z-10 grid items-center gap-12 py-24 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
             <span className="animate-fade-in inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm text-gold">
               <Icon name="ShieldCheck" size={16} /> Профессиональное SEO-агентство
             </span>
@@ -224,14 +217,20 @@ const Index = () => {
                 </div>
               ))}
             </div>
-            <div className="animate-fade-in stagger-5 mt-10 flex items-center gap-3">
-              <div className="animate-float flex -space-x-3">
-                {TEAM_PHOTOS.map((photo, i) => (
-                  <img key={i} src={photo} alt="Специалист агентства" className="h-11 w-11 rounded-full border-2 border-background object-cover" />
-                ))}
-              </div>
-              <span className="text-sm text-muted-foreground">Ваша команда экспертов по SEO-продвижению</span>
+          </div>
+          <div className="animate-fade-in stagger-3 hidden lg:block">
+            <div className="grid grid-cols-3 gap-3">
+              {TEAM_PHOTOS.map((photo, i) => (
+                <div
+                  key={i}
+                  className={`animate-float overflow-hidden rounded-xl border border-border shadow-lg ${i === 0 ? 'col-span-2 row-span-2' : ''}`}
+                  style={{ animationDelay: `${i * 0.4}s` }}
+                >
+                  <img src={photo} alt="Специалист агентства" className="h-full w-full object-cover" />
+                </div>
+              ))}
             </div>
+            <div className="mt-4 text-center text-sm text-muted-foreground">Ваша команда экспертов по SEO-продвижению</div>
           </div>
         </div>
       </section>
